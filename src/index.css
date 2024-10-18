@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: #777777;
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #4a4c70;
+}
+
+a {
+    color: #4a4c70;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #0968a7;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn.btn-custom {
+    padding: 12px 20px;
+    text-align: center; 
+   font-size: 16px;
+    font-weight: 500;
+    color: #777777;
+    border-radius: 0;
+    border: 2px solid #0968a7;
+    box-shadow: inset 0 0 0 0 #0968a7;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.btn.btn-custom:hover {
+    color: #20212B;
+    box-shadow: inset 0 0 0 30px #0968a7;
+}
+
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: inherit;
+    margin-left: 0;
+}
+
+/* Footer logo styling */
+.footer-logo {
+  width: 300px; /* Adjust as needed */
+  height: auto;
+  margin-left: 220px; /* Space between Useful Links and logo */
+}
+
+.footer-link {
+  flex: 2; /* Ensure it takes available space */
+
+}
+
+/* CSS for the logout button */
+.logout-btn {
+  background-color: #dc3545; /* Red background */
+  color: #fff;               /* White text */
+  border: none;              /* Remove default border */
+  padding: 8px 16px;         /* Add padding */
+  font-size: 16px;           /* Font size */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.logout-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.logout-btn:focus {
+  outline: none;             /* Remove focus outline */
+}
+
+.logout-btn:active {
+  background-color: #bd2130; /* Even darker red when clicked */
+}
+
+@media (max-width: 576px) {
+  /* Mobile responsiveness */
+  .logout-btn {
+    padding: 6px 12px;        /* Slightly reduce padding on smaller screens */
+    font-size: 14px;          /* Reduce font size on smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  /* Very small screen responsiveness */
+  .logout-btn {
+    padding: 4px 10px;        /* Further reduce padding */
+    font-size: 12px;          /* Smaller font size for very small screens */
+  }
+}

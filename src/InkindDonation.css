@@ -1,0 +1,70 @@
+.donation-form-container {
+    width: 90vw; /* Width for larger screens */
+    max-width: 600px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Centering the form */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-button.loading {
+    background-color: #6c757d; /* Change to grey while loading */
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 600px) {
+    .donation-form-container {
+      width: 95vw; /* Adjust width for smaller screens */
+      padding: 15px; /* Reduce padding */
+    }
+  
+    .form-title {
+      font-size: 20px; /* Adjust title size */
+    }
+  }
+  

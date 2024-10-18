@@ -1,0 +1,85 @@
+/* Styling for the Register page */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f7fa; /* Light professional background */
+    padding: 20px;
+  }
+  
+  .register-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for professional look */
+    max-width: 600px; /* Controls width of the container */
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+  }
+  
+  .register-btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .register-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .register-content {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  }
+  

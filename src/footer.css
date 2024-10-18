@@ -1,0 +1,57 @@
+.footer {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px 0; /* Top and bottom padding */
+  }
+  
+  .footer h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .footer a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .footer-contact p {
+    margin: 5px 0; /* Adjust spacing */
+  }
+  
+  .footer-social {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .footer-social .btn {
+    margin-right: 10px; /* Space between social icons */
+  }
+  
+  .footer-logo {
+    max-width: 100%; /* Ensure logo is responsive */
+    height: auto; /* Maintain aspect ratio */
+    padding: 10px; /* Padding around logo */
+  }
+  
+  .container {
+    max-width: 1200px; /* Center the footer content */
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  .copyright {
+    background-color: #e9ecef; /* Darker background for copyright */
+    padding: 10px 0; /* Padding for copyright */
+  }
+  
+  @media (max-width: 768px) {
+    .footer .row {
+      flex-direction: column; /* Stack columns on small screens */
+    }
+    .footer-logo {
+      margin-top: 20px; /* Add space on top for small screens */
+    }
+  }
+  

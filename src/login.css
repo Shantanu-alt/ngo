@@ -1,0 +1,134 @@
+/* General styling for the login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .login-content {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+  }
+  
+  .login-form-container {
+    padding: 40px;
+    flex: 1;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+  }
+  
+  .login-logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .login-content {
+      flex-direction: column;
+    }
+  
+    .login-form-container, .logo-container {
+      flex: 100%;
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .login-logo {
+      max-width: 70%;
+    }
+  }
+  
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4285F4; /* Google Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width button */
+    margin-top: 20px; /* Spacing from other elements */
+  }
+  
+  .google-btn:hover {
+    background-color: #357ae8; /* Darker shade on hover */
+  }
+  
+  .google-btn:active {
+    background-color: #2a65c8; /* Even darker when active */
+  }
+  
+  .google-btn::before {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_icon_%282020%29.svg');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  

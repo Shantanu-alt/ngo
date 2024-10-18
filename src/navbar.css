@@ -1,0 +1,66 @@
+/* navbar.css */
+
+/* Basic navbar styling */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 1.5rem; /* Adjust for larger screens */
+  flex-grow: 1; /* Allow brand to take up available space */
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+  margin-left: auto; /* Push the toggler to the right */
+}
+
+/* Flexbox properties for nav items */
+.navbar-nav {
+  flex: 1 1 auto; /* Allow nav items to grow and shrink */
+  display: flex;
+  justify-content: space-around; /* Space out items evenly */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .navbar-brand {
+    font-size: 1.4rem; /* Slightly smaller font for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.3rem; /* Smaller for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem; /* Even smaller */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.1rem; /* Smallest size */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: center; /* Center nav items */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0.5rem 0; /* Add some margin between items */
+  }
+}
+
+/* Styles for screens narrower than 320px */
+@media (max-width: 320px) {
+  .navbar-brand {
+    font-size: 1rem; /* Adjust for very small screens */
+  }
+}

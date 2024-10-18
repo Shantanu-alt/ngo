@@ -1,0 +1,142 @@
+.event-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .modal-body img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .modal-content {
+    position: relative;
+    text-align: center;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    padding-top: 2rem; /* Adjust this value for desired spacing */
+  }
+  
+  /* Container grid layout for event cards */
+.event-card img {
+  width: 100%;         /* Full width of the card */
+  height: 250px;       /* Fixed height for uniform grid */
+  object-fit: cover;   /* Crop and maintain aspect ratio */
+  border-radius: 8px;
+}
+
+/* Modal settings */
+.modal img {
+  max-width: 100%;     /* Constrain to modal width */
+  max-height: 80vh;    /* Prevent overflow */
+  object-fit: contain; /* Maintain original aspect ratio */
+}
+
+/* Modal backdrop customization */
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn-close {
+  border: none;
+  background: transparent;
+}
+
+.event-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 350px; /* Set a fixed height for the card */
+  display: flex;
+  flex-direction: column; /* Use flexbox to align items */
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+.card-body {
+  flex-grow: 1; /* Allow body to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.card-title {
+  margin-bottom: 0.5rem; /* Spacing below title */
+}
+
+.card-text {
+  flex-grow: 1; /* Allow text to take available space */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal-content {
+  position: relative;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.event-date-time,
+.modal-date-time {
+  margin-top: 8px; /* Adjust as needed */
+  font-size: 14px; /* Adjust font size as needed */
+  color: #555; /* Adjust color as needed */
+}
+

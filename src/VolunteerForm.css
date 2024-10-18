@@ -1,0 +1,63 @@
+.volunteer-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make the container fit the screen height */
+  padding: 20px;
+}
+
+.volunteer-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns layout for a wide form */
+  gap: 20px; /* Space between the form elements */
+  width: 100vw; /* Set the width of the form to 80% of the viewport width */
+  aspect-ratio: 21 / 10; /* 16:9 ratio for the form */
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Allows scrolling if content overflows */
+}
+
+.volunteer-form h2 {
+  grid-column: span 2; /* Make the heading span both columns */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none; /* Disable manual resizing of the textarea */
+}
+
+.submit-button {
+  grid-column: span 2; /* Make the submit button span both columns */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,85 @@
+/* CreateEvent.css */
+
+.event-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Blurs the background for a frosted glass effect */
+  }
+  
+  .event-form-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .event-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555; /* Slightly darker color for better readability */
+  }
+  
+  .event-form input,
+  .event-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .event-form input:focus,
+  .event-form textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+  }
+  
+  .submit-button {
+    padding: 0.75rem;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button.uploading {
+    background-color: #6c757d; /* Disable button style */
+  }
+  
+  .submit-button:hover:not(.uploading) {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 600px) {
+    .event-form-container {
+      padding: 1.5rem;
+    }
+  
+    .event-form-title {
+      font-size: 1.5rem; /* Smaller title on mobile */
+    }
+  
+    .event-form input,
+    .event-form textarea {
+      padding: 0.5rem; /* Smaller padding on mobile */
+      font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+  
+    .submit-button {
+      font-size: 1rem; /* Smaller button text on mobile */
+    }
+  }
+  

@@ -1,0 +1,45 @@
+.event-view-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+}
+
+.event-card {
+    background-color: #fff; /* Card background */
+    border: 1px solid #ccc; /* Card border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Rounded corners for images */
+    transition: transform 0.2s; /* Hover effect */
+}
+
+.event-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.event-image {
+    width: 100%; /* Full width for images */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover image */
+}
+
+.event-details {
+    padding: 15px; /* Padding for event details */
+    max-height: 150px; /* Limit height of details */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    display: -webkit-box; /* For ellipsis effect */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical; /* Set orientation */
+}
+
+.event-date-time {
+    font-size: 0.9em; /* Smaller font size for date and time */
+    color: #666; /* Lighter color for better readability */
+}
