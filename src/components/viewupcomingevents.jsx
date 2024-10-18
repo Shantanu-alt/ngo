@@ -87,7 +87,7 @@ const ViewUpcoming = () => {
       </div>
 
       <BackToTop />
-      <Footer />
+      
     </>
   );
 };
